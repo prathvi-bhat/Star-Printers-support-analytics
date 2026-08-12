@@ -42,4 +42,9 @@ The Dataset includes information such as:
 3. Imported and validated the dataset in MySQL.
 4. Performed SQL analysis covering SLA performance, ticket volume, resolution efficiency, customer satisfaction, and operational trends.
 5. Documented the project and analysis in GitHub.
-6. Develop an interactive Tableau dashboard in the next phase. 
+6. Develop an interactive Tableau dashboard in the next phase.
+
+## Excel Executive Dashboard
+The Excel dashboard provides an executive view of support operations, including SLA compliance, ticket volumes, resolution performance, customer satisfaction, and operational trends.
+
+![Excel Executive Dashboard](Executive_dashboard.png)
