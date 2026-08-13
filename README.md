@@ -15,6 +15,15 @@ Star Printers experienced an increase in support requests across multiple enterp
 - Analyze customer ticket volumes.
 - Provide management with actionable operational insights.
 
+## Project Workflow
+This project demonstrates an end-to-end business analytics workflow:
+
+**Excel → MySQL → Tableau**
+
+- **Excel:** Data validation, cleaning, exploratory analysis, and initial executive dashboard development.
+- **MySQL:** SQL-based analysis and validation of business KPIs, operational trends, and performance metrics.
+- **Tableau:** Interactive executive dashboard development for management reporting and performance analysis.
+
 ## Data Overview
 The analysis is based on 500 simulated enterprise support tickets covering January to March 2026. 
 
@@ -30,11 +39,10 @@ The Dataset includes information such as:
 - Region
 
 ## Tools Used
-- **Microsoft Excel** - Data exploration, validation, KPI analysis, PivotTables, and executive dashboard development
-- **MySQL/MySQL Workbench** - Data cleaning, validation, querying, aggregation, and business analysis
-- **SQL** - Filtering, grouping, conditional aggregation, subqueries, CTEs, date analysis, and joins
-- **Tableau** - Interactive dashboard development (next phase)
-- **GitHub** - Project documentation and portfolio presentation
+- **Microsoft Excel** - Data exploration, data validation, KPI analysis, PivotTables, PivotCharts, and executive dashboard development
+- **MySQL / MySQL Workbench** - Data cleaning, validation, querying, filtering, grouping, conditional aggregation, subqueries, CTEs, date analysis, joins, and business analysis
+- **Tableau** - KPI visualization, interactive dashboard development, trend analysis, filters, dashboard actions, and performance benchmarking
+- **GitHub** - Project documentation, and portfolio presentation
 
 ## Project Workflow
 1. Reviewed and validated the support ticket dataset.
@@ -73,3 +81,32 @@ The SQL analysis includes:
 
 ### Data Quality Observation
 Validation identified that the supplied `Resolution_Time` values do not consistently reconcile with elapsed hours calculated from `Created_Date` and `Closed_Date`. This discrepancy was retained as a documented data-quality observation rather than assuming a business definition that was not provided.
+
+## Tableau Executive Dashboard
+An interactive Tableau dashboard was developed to provide management with a consolidated view of enterprise support operations.
+
+The dashboard focuses on four core KPIs: 
+- Total Tickets: 500
+- SLA Compliance: 47.60%
+- Average Resolution Time: 10.41 hours
+- Average Customer Ratings: 3.14
+
+### Dashboard Features
+- Ticket volume analysis by issue category
+- Regional SLA performance comparison
+- Monthly ticket volume trend analysis
+- Customer rating comparison by support agent
+- Overall customer rating benchmark
+- Interactive Category and Priority filters
+- Region-based dashboard filtering through chart interaction
+
+### Tableau Dashboard
+![Tableau Executive Dashboard](Tableau_Executive_Dashboard.png)
+
+### Key Insights
+- Ticket volume increased from 124 in January to 150 in February and 226 in March, indicating a substantial increase in support demand.
+- Connectivity & Software generated the highest ticket volume with 178 tickets.
+- SLA Compliance varied considerably by region, ranging from 41.13% in West to 53.03% in East.
+- Overall SLA complaince was 47.60%, highlighting an important area for operational improvement.
+- Average customer rating was 3.14, with noticeable variation in performance across support agents.
+- The dashboard enables management to investigate performance dynamically using Category, Priority, and Region interactions.
