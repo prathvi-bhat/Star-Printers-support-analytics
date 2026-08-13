@@ -48,3 +48,28 @@ The Dataset includes information such as:
 The Excel dashboard provides an executive view of support operations, including SLA compliance, ticket volumes, resolution performance, customer satisfaction, and operational trends.
 
 ![Excel Executive Dashboard](Executive_dashboard.png)
+
+## SQL Analysis
+The validated support ticket dataset was imported into MySQL for further analysis and cross-validation of the Excel findings.
+
+The SQL analysis includes: 
+- Data validation and KPI calculations
+- Ticket volume analysis by category and department
+- Regional SLA performance analysis
+- Customer and agent performance analysis
+- Monthly ticket volume and SLA trend analysis
+- Subqueries and Common Table Expressions (CTEs)
+- JOIN analysis using agent reference data
+- Data quality investigation of resolution-time discrepancies
+
+### Key SQL Findings
+- Overall SLA compliance was **47.60%**.
+- **West Region** recorded the lowest SLA compliance at **41.13%**.
+- **Connectivity & Software** generated the highest ticket volume with **178 tickets**.
+- **Hardware & Mechanical** had the highest average resolution time at **14.91 hours**.
+- **Amazon Ltd** generated the highest customer ticket volume with **98 tickets**.
+-  Average customer satisfaction across the dataset was **3.14**.
+-  Ticket volume increased from **124 in January to 226 in March**, while SLA compliance improved from **45.97% to 48.67%**.
+
+### Data Quality Observation
+Validation identified that the supplied `Resolution_Time` values do not consistently reconcile with elapsed hours calculated from `Created_Date` and `Closed_Date`. This discrepancy was retained as a documented data-quality observation rather than assuming a business definition that was not provided.
