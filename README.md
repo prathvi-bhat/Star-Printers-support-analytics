@@ -1,8 +1,9 @@
 # Star-Printers-support-analytics
 
 ## Project Overview
-This project simulates an enterprise support operations environment and demonstrates how Business Analysts can transform operational data into actionable insights through data validation, analysis, visualization, and executive reporting. 
+
 This project analyzes 500 simulated enterprise support tickets to evaluate SLA performance, support workload, issue trends, resolution efficiency, customer satisfaction, and customer ticket volumes.
+The analysis follows an end-to-end business analytics workflow using Excel, MySQL, and Tableau, from data validation and KPI analysis through interactive visualization and executive reporting.
 
 ## Business Problem
 Star Printers experienced an increase in support requests across multiple enterprise customers. Management lacked a centralized view of operational performance, making it difficult to monitor SLA compliance, identify recurring issues, evaluate workload distribution, and prioritize areas requiring further investigation.
@@ -14,15 +15,6 @@ Star Printers experienced an increase in support requests across multiple enterp
 - Evaluate resolution time and customer satisfaction.
 - Analyze customer ticket volumes.
 - Provide management with actionable operational insights.
-
-## Project Workflow
-This project demonstrates an end-to-end business analytics workflow:
-
-**Excel → MySQL → Tableau**
-
-- **Excel:** Data validation, cleaning, exploratory analysis, and initial executive dashboard development.
-- **MySQL:** SQL-based analysis and validation of business KPIs, operational trends, and performance metrics.
-- **Tableau:** Interactive executive dashboard development for management reporting and performance analysis.
 
 ## Data Overview
 The analysis is based on 500 simulated enterprise support tickets covering January to March 2026. 
@@ -42,15 +34,15 @@ The Dataset includes information such as:
 - **Microsoft Excel** - Data exploration, data validation, KPI analysis, PivotTables, PivotCharts, and executive dashboard development
 - **MySQL / MySQL Workbench** - Data cleaning, validation, querying, filtering, grouping, conditional aggregation, subqueries, CTEs, date analysis, joins, and business analysis
 - **Tableau** - KPI visualization, interactive dashboard development, trend analysis, filters, dashboard actions, and performance benchmarking
-- **GitHub** - Project documentation, and portfolio presentation
+- **GitHub** - Project documentation and portfolio presentation
 
 ## Project Workflow
 1. Reviewed and validated the support ticket dataset.
 2. Built an Excel executive dashboard to analyze operational KPI and trends.
 3. Imported and validated the dataset in MySQL.
 4. Performed SQL analysis covering SLA performance, ticket volume, resolution efficiency, customer satisfaction, and operational trends.
-5. Documented the project and analysis in GitHub.
-6. Develop an interactive Tableau dashboard in the next phase.
+5. Developed an interactive Tableau executive dashboard with KPI tracking, filters, trend analysis, and performance comparisons.
+6. Documented the complete analysis, findings, and dashboards in GitHub.
 
 ## Excel Executive Dashboard
 The Excel dashboard provides an executive view of support operations, including SLA compliance, ticket volumes, resolution performance, customer satisfaction, and operational trends.
@@ -89,7 +81,7 @@ The dashboard focuses on four core KPIs:
 - Total Tickets: 500
 - SLA Compliance: 47.60%
 - Average Resolution Time: 10.41 hours
-- Average Customer Ratings: 3.14
+- Average Customer Rating: 3.14
 
 ### Dashboard Features
 - Ticket volume analysis by issue category
@@ -107,6 +99,13 @@ The dashboard focuses on four core KPIs:
 - Ticket volume increased from 124 in January to 150 in February and 226 in March, indicating a substantial increase in support demand.
 - Connectivity & Software generated the highest ticket volume with 178 tickets.
 - SLA Compliance varied considerably by region, ranging from 41.13% in West to 53.03% in East.
-- Overall SLA complaince was 47.60%, highlighting an important area for operational improvement.
+- Overall SLA compliance was 47.60%, highlighting an important area for operational improvement.
 - Average customer rating was 3.14, with noticeable variation in performance across support agents.
 - The dashboard enables management to investigate performance dynamically using Category, Priority, and Region interactions.
+
+### Business Recommendations
+- Investigate the operational drivers behind the West region's lower SLA compliance.
+- Prioritize root-cause analysis for Connectivity & Software issues due to their high ticket volume.
+- Review staffing and support capacity against the significant increase in ticket demand from January to March.
+- Examine agent-level customer rating differences to identify coaching opportunities and transferable best practices.
+- Investigate the documented resolution-time data discrepancy before using the field for operational SLA decisions.
