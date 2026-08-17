@@ -19,7 +19,7 @@ Star Printers experienced an increase in support requests across multiple enterp
 ## Data Overview
 The analysis is based on 500 simulated enterprise support tickets covering January to March 2026. 
 
-The Dataset includes information such as: 
+The dataset includes information such as: 
 - Ticket_ID and Customer Account
 - Created and Closed Dates
 - Category and Subcategory
@@ -38,7 +38,7 @@ The Dataset includes information such as:
 
 ## Project Workflow
 1. Reviewed and validated the support ticket dataset.
-2. Built an Excel executive dashboard to analyze operational KPI and trends.
+2. Built an Excel executive dashboard to analyze operational KPIs and trends.
 3. Imported and validated the dataset in MySQL.
 4. Performed SQL analysis covering SLA performance, ticket volume, resolution efficiency, customer satisfaction, and operational trends.
 5. Developed an interactive Tableau executive dashboard with KPI tracking, filters, trend analysis, and performance comparisons.
@@ -47,7 +47,7 @@ The Dataset includes information such as:
 ## Excel Executive Dashboard
 The Excel dashboard provides an executive view of support operations, including SLA compliance, ticket volumes, resolution performance, customer satisfaction, and operational trends.
 
-![Excel Executive Dashboard](Executive_dashboard.png)
+![Excel Executive Dashboard](excel/Executive_dashboard.png)
 
 ## SQL Analysis
 The validated support ticket dataset was imported into MySQL for further analysis and cross-validation of the Excel findings.
@@ -93,7 +93,7 @@ The dashboard focuses on four core KPIs:
 - Region-based dashboard filtering through chart interaction
 
 ### Tableau Dashboard
-![Tableau Executive Dashboard](Tableau_Executive_Dashboard.png)
+![Tableau Executive Dashboard](tableau/Tableau_Executive_Dashboard.png)
 
 ### Key Insights
 - Ticket volume increased from 124 in January to 150 in February and 226 in March, indicating a substantial increase in support demand.
