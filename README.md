@@ -42,7 +42,19 @@ The dataset includes information such as:
 3. Imported and validated the dataset in MySQL.
 4. Performed SQL analysis covering SLA performance, ticket volume, resolution efficiency, customer satisfaction, and operational trends.
 5. Developed an interactive Tableau executive dashboard with KPI tracking, filters, trend analysis, and performance comparisons.
-6. Documented the complete analysis, findings, and dashboards in GitHub.
+6. Defined business and functional requirements through BRD and FRD documentation.
+7. Developed representative user stories and acceptance criteria.
+8. Performed User Acceptance Testing (UAT) to validate KPI accuracy, analytical outputs, and dashboard interactions.
+9. Documented the complete project, findings, dashboards, and BA artifacts in GitHub.
+
+## Business Analysis Documentation
+To extend the project beyond technical analysis and demonstrate Business Analyst practices, supporting documentation was developed to connect business needs with solution requirements and validation.
+
+- **[Business Requirements Document (BRD)](documentation/Business_Requirements_Document.pdf)** - Defines the business problem, objectives, stakeholders, scope, business requirements, business rules, assumptions, and constraints.
+- **[Functional Requirements Document (FRD)](documentation/Functional_Requirements_Document.pdf)**- Translates business requirements into functional, data and calculation, and non-functional requirements.
+- **[User Stories, Acceptance Criteria & UAT](documentation/Star_Printers_User_Stories_and_UAT.xlsx)** - Captures representative requirements from the end-user perspective with testable acceptance conditions and  executed test scenarios validating KPI accuracy, analytical outputs, and dashboard filtering functionality.
+
+These artifacts demonstrate the progression from **business need → solution requirement → user requirement → validation**.
 
 ## Excel Executive Dashboard
 The Excel dashboard provides an executive view of support operations, including SLA compliance, ticket volumes, resolution performance, customer satisfaction, and operational trends.
@@ -68,8 +80,8 @@ The SQL analysis includes:
 - **Connectivity & Software** generated the highest ticket volume with **178 tickets**.
 - **Hardware & Mechanical** had the highest average resolution time at **14.91 hours**.
 - **Amazon Ltd** generated the highest customer ticket volume with **98 tickets**.
--  Average customer satisfaction across the dataset was **3.14**.
--  Ticket volume increased from **124 in January to 226 in March**, while SLA compliance improved from **45.97% to 48.67%**.
+- Average customer satisfaction across the dataset was **3.14**.
+- Ticket volume increased from **124 in January to 226 in March**, while SLA compliance improved from **45.97% to 48.67%**.
 
 ### Data Quality Observation
 Validation identified that the supplied `Resolution_Time` values do not consistently reconcile with elapsed hours calculated from `Created_Date` and `Closed_Date`. This discrepancy was retained as a documented data-quality observation rather than assuming a business definition that was not provided.
@@ -101,7 +113,7 @@ The dashboard focuses on four core KPIs:
 - SLA Compliance varied considerably by region, ranging from 41.13% in West to 53.03% in East.
 - Overall SLA compliance was 47.60%, highlighting an important area for operational improvement.
 - Average customer rating was 3.14, with noticeable variation in performance across support agents.
-- The dashboard enables management to investigate performance dynamically using Category, Priority, and Region interactions.
+- The dashboard enables management to investigate operational performance dynamically using Region, Priority, and Category filters.
 
 ### Business Recommendations
 - Investigate the operational drivers behind the West region's lower SLA compliance.
